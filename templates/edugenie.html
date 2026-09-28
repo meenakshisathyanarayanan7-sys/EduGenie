@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>EduGenie</h1>
+        <p class="subtitle">Google Gemini Powered Learning Assistant</p>
+
+        <div class="card">
+
+            <label for="task">Choose a Task</label>
+
+            <select id="task">
+                <option value="qa">Ask a Question</option>
+                <option value="explain">Explain a Concept</option>
+                <option value="quiz">Generate Quiz</option>
+                <option value="summarize">Summarize</option>
+                <option value="learn">Learning Recommendations</option>
+            </select>
+
+            <label for="inputText">Enter your content</label>
+
+            <textarea
+                id="inputText"
+                placeholder="Type your question, topic, or text here..."
+                rows="8"
+            ></textarea>
+
+            <button id="submitBtn">Submit</button>
+
+            <div id="loading" class="loading hidden">
+                Processing...
+            </div>
+
+            <div class="result-box">
+                <h2>Result</h2>
+                <div id="result">Your result will appear here.</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
